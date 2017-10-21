@@ -256,7 +256,7 @@ void loop(){
 
     // Control Errors.
     if (isnan(sensorData[0]) || isnan(sensorData[1])|| isnan(sensorData[2])|| isnan(sensorData[3])|| isnan(sensorData[4])|| isnan(sensorData[5])|| isnan(sensorData[6])) {
-        Serial.println("Failed to read sensor!!");
+        // Serial.println("Failed to read sensor!!");
         return;
     }
     
@@ -267,13 +267,13 @@ void loop(){
     radio.write(sensorData, sizeof(sensorData));
 
     // serially print the sensor data.
-    Serial.println(sensorData[0]);
-    Serial.println(sensorData[1]);
-    Serial.println(sensorData[2]);
-    Serial.println(sensorData[3]);
-    Serial.println(sensorData[4]);
-    Serial.println(sensorData[5]);
-    Serial.println(sensorData[6]);
+    // Serial.println(sensorData[0]);
+    // Serial.println(sensorData[1]);
+    // Serial.println(sensorData[2]);
+    // Serial.println(sensorData[3]);
+    // Serial.println(sensorData[4]);
+    // Serial.println(sensorData[5]);
+    // Serial.println(sensorData[6]);
 
     // Enter sleep mode
     enterSleep();
